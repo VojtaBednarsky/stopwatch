@@ -1,0 +1,389 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/bin_cnt.vhd" in Library work.
+Architecture behavioral of Entity bin_cnt is up to date.
+Compiling vhdl file "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/hex_to_sseg.vhd" in Library work.
+Architecture behavioral of Entity hex_to_sseg is up to date.
+Compiling vhdl file "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/one_of_four.vhd" in Library work.
+Architecture behavioral of Entity one_of_four is up to date.
+Compiling vhdl file "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/start_stop.vhd" in Library work.
+Architecture behavioral of Entity start_stop is up to date.
+Compiling vhdl file "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/delic_f.vhd" in Library work.
+Architecture behavioral of Entity delic_f is up to date.
+Compiling vhdl file "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/citac_0_9.vhd" in Library work.
+Architecture behavioral of Entity citac_0_9 is up to date.
+Compiling vhdl file "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/citac_0_5.vhd" in Library work.
+Architecture behavioral of Entity citac_0_5 is up to date.
+Compiling vhdl file "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/citac_0_4.vhd" in Library work.
+Architecture behavioral of Entity citac_0_4 is up to date.
+Compiling vhdl file "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/dekoder.vhd" in Library work.
+Architecture behavioral of Entity dekoder is up to date.
+Compiling vhdl file "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/disp_mux.vhd" in Library work.
+Architecture behavioral of Entity disp_mux is up to date.
+Compiling vhdl file "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/top.vhd" in Library work.
+Entity <top> compiled.
+Entity <top> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <start_stop> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <delic_f> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <citac_0_9> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <citac_0_5> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <citac_0_4> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <dekoder> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <disp_mux> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <bin_cnt> in library <work> (architecture <Behavioral>) with generics.
+	N_BIT = 7
+
+Analyzing hierarchy for entity <hex_to_sseg> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <one_of_four> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/top.vhd" line 42: Unconnected output port 'delic_f_o' of component 'delic_f'.
+WARNING:Xst:753 - "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/top.vhd" line 81: Unconnected output port 'carry_n_o' of component 'citac_0_4'.
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <start_stop> in library <work> (Architecture <Behavioral>).
+Entity <start_stop> analyzed. Unit <start_stop> generated.
+
+Analyzing Entity <delic_f> in library <work> (Architecture <Behavioral>).
+Entity <delic_f> analyzed. Unit <delic_f> generated.
+
+Analyzing Entity <citac_0_9> in library <work> (Architecture <Behavioral>).
+Entity <citac_0_9> analyzed. Unit <citac_0_9> generated.
+
+Analyzing Entity <citac_0_5> in library <work> (Architecture <Behavioral>).
+Entity <citac_0_5> analyzed. Unit <citac_0_5> generated.
+
+Analyzing Entity <citac_0_4> in library <work> (Architecture <Behavioral>).
+Entity <citac_0_4> analyzed. Unit <citac_0_4> generated.
+
+Analyzing Entity <dekoder> in library <work> (Architecture <Behavioral>).
+Entity <dekoder> analyzed. Unit <dekoder> generated.
+
+Analyzing Entity <disp_mux> in library <work> (Architecture <Behavioral>).
+Entity <disp_mux> analyzed. Unit <disp_mux> generated.
+
+Analyzing generic Entity <bin_cnt> in library <work> (Architecture <Behavioral>).
+	N_BIT = 7
+Entity <bin_cnt> analyzed. Unit <bin_cnt> generated.
+
+Analyzing Entity <hex_to_sseg> in library <work> (Architecture <Behavioral>).
+Entity <hex_to_sseg> analyzed. Unit <hex_to_sseg> generated.
+
+Analyzing Entity <one_of_four> in library <work> (Architecture <Behavioral>).
+Entity <one_of_four> analyzed. Unit <one_of_four> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <start_stop>.
+    Related source file is "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/start_stop.vhd".
+Unit <start_stop> synthesized.
+
+
+Synthesizing Unit <delic_f>.
+    Related source file is "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/delic_f.vhd".
+    Found 7-bit adder for signal <s_next$addsub0000> created at line 30.
+    Found 7-bit register for signal <s_reg>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <delic_f> synthesized.
+
+
+Synthesizing Unit <citac_0_9>.
+    Related source file is "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/citac_0_9.vhd".
+    Found 4-bit adder for signal <s_next$addsub0000> created at line 28.
+    Found 4-bit register for signal <s_reg>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <citac_0_9> synthesized.
+
+
+Synthesizing Unit <citac_0_5>.
+    Related source file is "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/citac_0_5.vhd".
+    Found 4-bit adder for signal <s_next$addsub0000> created at line 28.
+    Found 4-bit register for signal <s_reg>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <citac_0_5> synthesized.
+
+
+Synthesizing Unit <citac_0_4>.
+    Related source file is "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/citac_0_4.vhd".
+    Found 4-bit adder for signal <s_next$addsub0000> created at line 28.
+    Found 4-bit register for signal <s_reg>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <citac_0_4> synthesized.
+
+
+Synthesizing Unit <dekoder>.
+    Related source file is "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/dekoder.vhd".
+WARNING:Xst:737 - Found 4-bit latch for signal <y_o>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <dekoder> synthesized.
+
+
+Synthesizing Unit <bin_cnt>.
+    Related source file is "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/bin_cnt.vhd".
+    Found 7-bit up counter for signal <s_reg>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <bin_cnt> synthesized.
+
+
+Synthesizing Unit <hex_to_sseg>.
+    Related source file is "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/hex_to_sseg.vhd".
+    Found 16x7-bit ROM for signal <sseg_o>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <hex_to_sseg> synthesized.
+
+
+Synthesizing Unit <one_of_four>.
+    Related source file is "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/one_of_four.vhd".
+Unit <one_of_four> synthesized.
+
+
+Synthesizing Unit <disp_mux>.
+    Related source file is "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/disp_mux.vhd".
+WARNING:Xst:646 - Signal <s_clk_mux<4:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit 4-to-1 multiplexer for signal <s_hex>.
+Unit <disp_mux> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/top.vhd".
+WARNING:Xst:1780 - Signal <carry_5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 6
+ 4-bit adder                                           : 5
+ 7-bit adder                                           : 1
+# Counters                                             : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 6
+ 4-bit register                                        : 5
+ 7-bit register                                        : 1
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 6
+ 4-bit adder                                           : 5
+ 7-bit adder                                           : 1
+# Counters                                             : 1
+ 7-bit up counter                                      : 1
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Optimizing unit <start_stop> ...
+
+Optimizing unit <one_of_four> ...
+
+Optimizing unit <hex_to_sseg> ...
+
+Optimizing unit <delic_f> ...
+
+Optimizing unit <citac_0_9> ...
+
+Optimizing unit <citac_0_5> ...
+
+Optimizing unit <citac_0_4> ...
+
+Optimizing unit <dekoder> ...
+
+Optimizing unit <bin_cnt> ...
+
+Optimizing unit <disp_mux> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 293
+#      AND2                        : 106
+#      AND3                        : 8
+#      AND4                        : 4
+#      INV                         : 116
+#      OR2                         : 29
+#      OR3                         : 1
+#      XOR2                        : 29
+# FlipFlops/Latches                : 38
+#      FD                          : 14
+#      FDC                         : 20
+#      LD                          : 4
+# IO Buffers                       : 18
+#      IBUF                        : 3
+#      OBUF                        : 15
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.51 secs
+ 
+--> 
+
+
+Total memory usage is 520552 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

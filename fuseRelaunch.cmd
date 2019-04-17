@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/top_isim_beh.exe" -prj "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/top_beh.prj" "work.top" 

@@ -1,0 +1,152 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK2: 2=clk_i.p
+GSET: 1=!btn_i<0>.p
+GRST: 1=!btn_i<0>.p
+----------------- B l o c k 0 ------------------
+PLApt(20/56), Fanin(18/38), Clk(1/3), Bct(1/4), Pin(1/6), Mcell(16/16)
+PLApts[20/53] 19 14 27 20 28 15 29 22 () () 26 () () 26 () () 30 () () () () () 26 () () () () () 114 () () 
+              113 () () 112 () () 111 () () 110 () () 21 () () () () () 26 () () 41
+Fanins[18] DISPMUX/BINCNT/s_reg_0_0.n DISPMUX/BINCNT/s_reg_0_1.n DISPMUX/BINCNT/s_reg_0_2.n 
+           DISPMUX/BINCNT/s_reg_0_3.n DISPMUX/BINCNT/s_reg_0_4.n DISPMUX/s_clk_mux<5>.n vystup_1<0>.n 
+           vystup_1<1>.n vystup_1<2>.n vystup_1<3>.n vystup_2<0>.n vystup_2<1>.n vystup_2<2>.n vystup_2<3>.n 
+           vystup_3<0>.n vystup_3<1>.n vystup_3<2>.n vystup_3<3>.n
+clk[1] clk_i 
+CTC: (pt=28) vystup_2<0> vystup_2<1>' vystup_2<2>' vystup_2<3> ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[17] [btn_i<0>(143)] [DISPMUX/BINCNT/s_reg_0_0(160)] [DISPMUX/BINCNT/s_reg_0_1(159)]  
+           [DISPMUX/BINCNT/s_reg_0_2(155)] [DISPMUX/BINCNT/s_reg_0_3(154)] [DISPMUX/BINCNT/s_reg_0_4(153)]  
+           [DISPMUX/s_clk_mux<5>(152)] [DISPMUX/s_clk_mux<6>(151)] [vystup_2<0>(149)] [vystup_2<2>(146)]  
+           [vystup_2<1>(145)] [vystup_2<3>(158)] [vystup_3<0>(157)] [vystup_3<2>(156)] [vystup_3<1>(150)]  
+           [vystup_3<3>(148)] [vystup_4<0>(147)] 
+Signal[17] [ 0: vystup_2<1>(145)  ][ 1: vystup_2<2>(146)  ][ 2: vystup_4<0>(147) btn_i<0>(143)  ][ 3:  
+           vystup_3<3>(148) (142)  ][ 4: vystup_2<0>(149)  ][ 5: vystup_3<1>(150) (140)  ][ 6:  
+           DISPMUX/s_clk_mux<6>(151)  ][ 7: DISPMUX/s_clk_mux<5>(152)  ][ 8: DISPMUX/BINCNT/s_reg_0_4(153)  ] 
+           [ 9: DISPMUX/BINCNT/s_reg_0_3(154)  ][ 10: DISPMUX/BINCNT/s_reg_0_2(155)  ][ 11: vystup_3<2>(156)  
+           (139)  ][ 12: vystup_3<0>(157) (138)  ][ 13: vystup_2<3>(158) (137)  ][ 14:  
+           DISPMUX/BINCNT/s_reg_0_1(159)  ][ 15: DISPMUX/BINCNT/s_reg_0_0(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(29/56), Fanin(25/38), Clk(0/3), Bct(1/4), Pin(0/8), Mcell(16/16)
+PLApts[29/56] 13 25 18 26 3 17 39 40 35 36 30 42 4 38 6 11 33 5 16 33 32 () 33 () () () () () () () () () () 
+              () 43 () () 43 () () 43 () () 33 () () () () () 34 () () 37 () () 43
+Fanins[25] DELIC_F/s_reg<0>.n DELIC_F/s_reg<1>.n DELIC_F/s_reg<2>.n DELIC_F/s_reg<3>.n DELIC_F/s_reg<4>.n 
+           DELIC_F/s_reg<5>.n DELIC_F/s_reg<6>.n vystup_1<0>.n vystup_1<1>.n vystup_1<2>.n vystup_1<3>.n 
+           vystup_3<0>.n vystup_3<1>.n vystup_3<2>.n vystup_3<3>.n vystup_4<0>.n vystup_4<1>.n vystup_4<2>.n 
+           vystup_4<3>.n vystup_5<0>.n vystup_5<1>.n vystup_5<2>.n vystup_5<3>.n clk_i.p sw_i<0>.p
+clk[0] 
+CTC: (pt=3) clk_i sw_i<0> ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [vystup_1<1>(176)] [vystup_1<3>(171)] [vystup_1<2>(170)] [vystup_1<0>(169)]  
+           [DELIC_F/s_reg<5>(168)] [DELIC_F/s_reg<6>(167)] [DELIC_F/s_reg<2>(166)] [DELIC_F/s_reg<4>(162)]  
+           [DELIC_F/s_reg<3>(175)] [DELIC_F/s_reg<1>(174)] [DELIC_F/s_reg<0>(173)] [vystup_5<1>(172)]  
+           [vystup_5<3>(165)] [vystup_5<0>(164)] [vystup_5<2>(163)] [vystup_4<1>(161)] 
+Signal[16] [ 0: vystup_4<1>(161) (2)  ][ 1: DELIC_F/s_reg<4>(162)  ][ 2: vystup_5<2>(163) (3)  ][ 3:  
+           vystup_5<0>(164) (4)  ][ 4: vystup_5<3>(165) (5)  ][ 5: DELIC_F/s_reg<2>(166)  ][ 6:  
+           DELIC_F/s_reg<6>(167)  ][ 7: DELIC_F/s_reg<5>(168)  ][ 8: vystup_1<0>(169)  ][ 9:  
+           vystup_1<2>(170)  ][ 10: vystup_1<3>(171)  ][ 11: vystup_5<1>(172) (6)  ][ 12:  
+           DELIC_F/s_reg<0>(173) (7)  ][ 13: DELIC_F/s_reg<1>(174) (9)  ][ 14: DELIC_F/s_reg<3>(175) (10)  ] 
+           [ 15: vystup_1<1>(176)  ]
+----------------- B l o c k 2 ------------------
+PLApt(6/56), Fanin(12/38), Clk(0/3), Bct(1/4), Pin(0/6), Mcell(3/16)
+PLApts[6/47] 23 31 7 10 30 () () () () () () () () () () () () () () () () () () () () () () () () () () () 
+             () () () () () () () () () () () () () () 24
+Fanins[12] vystup_3<0>.n vystup_3<1>.n vystup_3<2>.n vystup_3<3>.n vystup_4<0>.n vystup_4<1>.n vystup_4<2>.n 
+           vystup_4<3>.n vystup_5<0>.n vystup_5<1>.n vystup_5<2>.n vystup_5<3>.n
+clk[0] 
+CTC: (pt=30) vystup_3<0> vystup_3<1>' vystup_3<2>' vystup_3<3> ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 3] [vystup_4<2>(191)] [vystup_4<3>(189)] [N_PZ_229(188)] 
+Signal[ 3] [ 0: (136)  ][ 1: (135)  ][ 2: (134)  ][ 3:  ][ 4: (133)  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ] 
+           [ 10:  ][ 11: N_PZ_229(188)  ][ 12: vystup_4<3>(189)  ][ 13: (132)  ][ 14: vystup_4<2>(191)  ] 
+           [ 15: (131)  ]
+----------------- B l o c k 3 ------------------
+----------------- B l o c k 4 ------------------
+----------------- B l o c k 5 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(2/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [clk_i(38)] [sw_i<0>(39)] 
+Signal[ 2] [ 0: (34)  ][ 1: (35)  ][ 2:  ][ 3: clk_i(38)  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ] 
+           [ 11: sw_i<0>(39)  ][ 12: (40)  ][ 13: (41)  ][ 14: (42)  ][ 15: (43)  ]
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+----------------- B l o c k 9 ------------------
+----------------- B l o c k 10 ------------------
+PLApt(4/56), Fanin(2/38), Clk(0/3), Bct(0/4), Pin(4/8), Mcell(4/16)
+PLApts[4/56] () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 
+             () () () () () () () () () () () () () () 93 () () 61 () () 77 () () 44
+Fanins[ 2] DISPMUX/s_clk_mux<5>.n DISPMUX/s_clk_mux<6>.n
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 4] [disp_digit_o<0>(317),disp_digit_o<0>(126)] [disp_digit_o<1>(318),disp_digit_o<1>(128)]  
+           [disp_digit_o<2>(319),disp_digit_o<2>(129)] [disp_digit_o<3>(320),disp_digit_o<3>(130)] 
+Signal[ 4] [ 0:  ][ 1:  ][ 2:  ][ 3:  ][ 4: (120)  ][ 5: (121)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10: (124)  ] 
+           [ 11: (125)  ][ 12: disp_digit_o<0>(317) disp_digit_o<0>(126)  ][ 13: disp_digit_o<1>(318)  
+           disp_digit_o<1>(128)  ][ 14: disp_digit_o<2>(319) disp_digit_o<2>(129)  ][ 15:  
+           disp_digit_o<3>(320) disp_digit_o<3>(130)  ]
+----------------- B l o c k 11 ------------------
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+PLApt(17/56), Fanin(23/38), Clk(0/3), Bct(1/4), Pin(5/8), Mcell(5/16)
+PLApts[17/50] 8 50 54 59 115 67 71 75 83 87 91 99 103 108 () () () () () 12 () () () () () 9 () () () () () 
+              () () () () () () () () () () () () () () () () () () 7
+Fanins[23] DISPMUX/s_clk_mux<5>.n DISPMUX/s_clk_mux<6>.n N_PZ_229.n vystup_1<0>.n vystup_1<1>.n vystup_1<2>.n 
+           vystup_1<3>.n vystup_2<0>.n vystup_2<1>.n vystup_2<2>.n vystup_2<3>.n vystup_3<0>.n vystup_3<1>.n 
+           vystup_3<2>.n vystup_3<3>.n vystup_4<0>.n vystup_4<1>.n vystup_4<2>.n vystup_4<3>.n vystup_5<0>.n 
+           vystup_5<1>.n vystup_5<2>.n vystup_5<3>.n
+clk[0] 
+CTC: (pt=115) N_PZ_229 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 5] [led_o<2>(365),led_o<2>(66)] [led_o<0>(356),led_o<0>(69)] [led_o<1>(358),led_o<1>(68)]  
+           [led_o<3>(366),led_o<3>(64)] [disp_sseg_o<0>(368),disp_sseg_o<0>(61)] 
+Signal[ 5] [ 0: (74)  ][ 1: (71)  ][ 2: (70)  ][ 3: led_o<0>(356) led_o<0>(69)  ][ 4:  ][ 5: led_o<1>(358)  
+           led_o<1>(68)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11:  ][ 12: led_o<2>(365) led_o<2>(66)  ] 
+           [ 13: led_o<3>(366) led_o<3>(64)  ][ 14:  ][ 15: disp_sseg_o<0>(368) disp_sseg_o<0>(61)  ]
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------
+PLApt(50/56), Fanin(18/38), Clk(0/3), Bct(0/4), Pin(6/7), Mcell(6/16)
+PLApts[50/50] 45 51 56 60 62 68 73 76 78 84 89 92 94 100 105 109 46 48 49 55 63 65 66 72 79 81 82 88 95 97 98 
+              104 53 57 58 70 74 86 90 102 106 107 47 52 64 69 80 85 96 101
+Fanins[18] DISPMUX/s_clk_mux<5>.n DISPMUX/s_clk_mux<6>.n vystup_1<0>.n vystup_1<1>.n vystup_1<2>.n 
+           vystup_1<3>.n vystup_2<0>.n vystup_2<1>.n vystup_2<2>.n vystup_2<3>.n vystup_3<0>.n vystup_3<1>.n 
+           vystup_3<2>.n vystup_3<3>.n vystup_4<0>.n vystup_4<1>.n vystup_4<2>.n vystup_4<3>.n
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 6] [disp_sseg_o<3>(395),disp_sseg_o<3>(58)] [disp_sseg_o<5>(400),disp_sseg_o<5>(53)]  
+           [disp_sseg_o<1>(399),disp_sseg_o<1>(54)] [disp_sseg_o<2>(396),disp_sseg_o<2>(57)]  
+           [disp_sseg_o<4>(389),disp_sseg_o<4>(60)] [disp_sseg_o<6>(397),disp_sseg_o<6>(56)] 
+Signal[ 6] [ 0:  ][ 1:  ][ 2:  ][ 3:  ][ 4: disp_sseg_o<4>(389) disp_sseg_o<4>(60)  ][ 5: (59)  ][ 6:  ][ 7:  
+            ][ 8:  ][ 9:  ][ 10: disp_sseg_o<3>(395) disp_sseg_o<3>(58)  ][ 11: disp_sseg_o<2>(396)  
+           disp_sseg_o<2>(57)  ][ 12: disp_sseg_o<6>(397) disp_sseg_o<6>(56)  ][ 13:  ][ 14:  
+           disp_sseg_o<1>(399) disp_sseg_o<1>(54)  ][ 15: disp_sseg_o<5>(400) disp_sseg_o<5>(53)  ]

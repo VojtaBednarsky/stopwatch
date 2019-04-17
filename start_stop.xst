@@ -1,0 +1,5 @@
+set -tmpdir "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/xst/projnav.tmp"
+set -xsthdpdir "/home/lab661/Documents/VHDL_BDNHLB/stopky_HLBDN/xst"
+elaborate
+-ifn start_stop.prj
+-ifmt mixed

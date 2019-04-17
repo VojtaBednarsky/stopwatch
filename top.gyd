@@ -1,0 +1,59 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+btn_i<0> S:PIN143
+clk_i S:PIN38
+sw_i<0> S:PIN39
+disp_digit_o<0> S:PIN126
+disp_digit_o<1> S:PIN128
+disp_digit_o<2> S:PIN129
+disp_digit_o<3> S:PIN130
+disp_sseg_o<0> S:PIN61
+disp_sseg_o<1> S:PIN54
+disp_sseg_o<2> S:PIN57
+disp_sseg_o<3> S:PIN58
+disp_sseg_o<4> S:PIN60
+disp_sseg_o<5> S:PIN53
+disp_sseg_o<6> S:PIN56
+led_o<0> S:PIN69
+led_o<1> S:PIN68
+led_o<2> S:PIN66
+led_o<3> S:PIN64
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 vystup_2<1> vystup_2<2> vystup_4<0> vystup_3<3>
+		 vystup_2<0> vystup_3<1> DISPMUX/s_clk_mux<6> DISPMUX/s_clk_mux<5>
+		 DISPMUX/BINCNT/s_reg_0_4 DISPMUX/BINCNT/s_reg_0_3 DISPMUX/BINCNT/s_reg_0_2 vystup_3<2>
+		 vystup_3<0> vystup_2<3> DISPMUX/BINCNT/s_reg_0_1 DISPMUX/BINCNT/s_reg_0_0
+		
+PARTITION FB2_1 vystup_4<1> DELIC_F/s_reg<4> vystup_5<2> vystup_5<0>
+		 vystup_5<3> DELIC_F/s_reg<2> DELIC_F/s_reg<6> DELIC_F/s_reg<5>
+		 vystup_1<0> vystup_1<2> vystup_1<3> vystup_5<1>
+		 DELIC_F/s_reg<0> DELIC_F/s_reg<1> DELIC_F/s_reg<3> vystup_1<1>
+		
+PARTITION FB3_12 N_PZ_229 vystup_4<3>
+PARTITION FB3_15 vystup_4<2>
+
+
+
+
+
+
+
+
+PARTITION FB11_13 disp_digit_o<0> disp_digit_o<1> disp_digit_o<2> disp_digit_o<3>
+		
+
+
+PARTITION FB14_4 led_o<0>
+PARTITION FB14_6 led_o<1>
+PARTITION FB14_13 led_o<2> led_o<3>
+PARTITION FB14_16 disp_sseg_o<0>
+
+PARTITION FB16_5 disp_sseg_o<4>
+PARTITION FB16_11 disp_sseg_o<3> disp_sseg_o<2> disp_sseg_o<6>
+PARTITION FB16_15 disp_sseg_o<1> disp_sseg_o<5>
+
